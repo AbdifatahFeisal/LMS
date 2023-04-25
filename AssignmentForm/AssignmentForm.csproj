@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AssignmentForm</RootNamespace>
+    <AssemblyName>AssignmentForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDbConnection.cs" />
+    <Compile Include="AssignmentDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssignmentDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComparingDate.cs" />
+    <Compile Include="mgrborrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgrborrow.Designer.cs">
+      <DependentUpon>mgrborrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgrRenew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgrRenew.Designer.cs">
+      <DependentUpon>mgrRenew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgrreturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgrreturn.Designer.cs">
+      <DependentUpon>mgrreturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userborrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userborrow.Designer.cs">
+      <DependentUpon>userborrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateReturnDate.cs" />
+    <Compile Include="CompareDate.cs" />
+    <Compile Include="MaxBorrow.cs" />
+    <Compile Include="mgrlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgrlogin.Designer.cs">
+      <DependentUpon>mgrlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mgraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mgraction.Designer.cs">
+      <DependentUpon>mgraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userRenew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userRenew.Designer.cs">
+      <DependentUpon>userRenew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userreturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userreturn.Designer.cs">
+      <DependentUpon>userreturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selection.Designer.cs">
+      <DependentUpon>selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="useraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="useraction.Designer.cs">
+      <DependentUpon>useraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLogn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLogn.Designer.cs">
+      <DependentUpon>userLogn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="mgrborrow.resx">
+      <DependentUpon>mgrborrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgrRenew.resx">
+      <DependentUpon>mgrRenew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgrreturn.resx">
+      <DependentUpon>mgrreturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userborrow.resx">
+      <DependentUpon>userborrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgrlogin.resx">
+      <DependentUpon>mgrlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mgraction.resx">
+      <DependentUpon>mgraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="userRenew.resx">
+      <DependentUpon>userRenew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userreturn.resx">
+      <DependentUpon>userreturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection.resx">
+      <DependentUpon>selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="useraction.resx">
+      <DependentUpon>useraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLogn.resx">
+      <DependentUpon>userLogn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AssignmentDatabaseDataSet.xsc">
+      <DependentUpon>AssignmentDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssignmentDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssignmentDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssignmentDatabaseDataSet.xss">
+      <DependentUpon>AssignmentDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssignmentDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\thi-business-and-education-background1.jpg" />
+    <None Include="Resources\2.JPG" />
+    <None Include="Resources\dlv-plugin-for-divi - Copy.jpg" />
+    <None Include="Resources\australia-education-system.jpg" />
+    <None Include="Resources\library.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

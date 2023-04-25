@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentForm", "AssignmentForm\AssignmentForm.csproj", "{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1F1E6E6-790F-4697-9EAB-DE5ACF6CE779}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.cs = ..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.cs
+		..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.Designer.cs = ..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.Designer.cs
+		..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.resx = ..\..\..\Desktop\SEM 2\IOOP\ioop\Renewal\WindowsFormsApp1\Form1.resx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71BD89EC-2BF7-41E0-AD7A-F1851496D08B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDE50C81-024A-4565-8078-0BAF3AC2777D}
+	EndGlobalSection
+EndGlobal
